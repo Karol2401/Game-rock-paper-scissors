@@ -2,14 +2,16 @@
 const playerSelectionDisplay = document.getElementById('player-selection')
 const computerSelectionDisplay = document.getElementById('computer-selection')
 const resultDisplay = document.getElementById('result')
+const scoreDisplay = document.getElementById('score')
 
 // Creation of an array of all buttons
 const possibleSelections = document.querySelectorAll('button')
 
-// Get access to playerSelection, computerSelection and result from anywere
+// Get access to playerSelection, computerSelection, result and score from anywere
 let playerSelection
 let computerSelection
 let result
+let score
 
 //Add event when clicking one of the 3 buttons
 possibleSelections.forEach(button => button.addEventListener('click', (event) => {
@@ -37,28 +39,48 @@ function generateComputerSelection () {
     computerSelectionDisplay.innerHTML = computerSelection
 }
 
+//Comparison of computer and player choices and matching of results
 function getResult () {
     if (computerSelection === playerSelection) {
         result = "Draw"
+        playerScore = 0
+        computerScore = 0
     }
     if (computerSelection === 'rock' && playerSelection === 'scissors') {
         result = "You lose"
+        playerScore = 0
+        computerScore = 1
     }
     if (computerSelection === 'scissors' && playerSelection === 'paper') {
         result = "You lose"
+        playerScore = 0
+        computerScore = 1
     }
     if (computerSelection === 'paper' && playerSelection === 'rock') {
         result = "You lose"
+        playerScore = 0
+        computerScore = 1
     }
     if (computerSelection === 'scissors' && playerSelection === 'rock') {
         result = "You win"
+        playerScore = 1
+        computerScore = 0
     }
     if (computerSelection === 'paper' && playerSelection === 'scissors') {
         result = "You win"
+        playerScore = 1
+        computerScore = 0
     }
     if (computerSelection === 'rock' && playerSelection === 'paper') {
         result = "You win"
+        playerScore = 1
+        computerScore = 0
     }
     resultDisplay.innerHTML = result
+    return playerScore
+    return computerScore
 }
 
+function getScore () {
+
+}
