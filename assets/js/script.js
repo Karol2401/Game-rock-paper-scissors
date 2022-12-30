@@ -14,11 +14,12 @@ const possibleSelections = document.querySelectorAll('button')
 let playerSelection
 let computerSelection
 let result
+let finalResult
 let playerScore = 0
 let computerScore = 0
 
 //Add event when clicking one of the 3 buttons
-possibleSelections.forEach(button => button.addEventListener('click', (event) => {
+possibleSelections.forEach(gamebutton => gamebutton.addEventListener('click', (event) => {
     playerSelection = event.target.id
     playerSelectionDisplay.innerHTML = playerSelection
     generateComputerSelection ()
@@ -87,11 +88,14 @@ function gameOver () {
     if (playerScore == 5) {
         startPage.style.display = 'none'
         gameOverPage.style.display = 'block' 
+        finalResult = 'You are winner! <a href="https://8000-karol2401-gamerockpaper-rxqnq940vbj.ws-eu80.gitpod.io/">Try again</a>'
 
     }
     if (computerScore == 5) {
         startPage.style.display = 'none'
         gameOverPage.style.display = 'block'
+        finalResult = 'You have lost this game! <a href="https://8000-karol2401-gamerockpaper-rxqnq940vbj.ws-eu80.gitpod.io/">Try again</a>'
     }
+    gameOverPage.innerHTML = finalResult
 }
 
