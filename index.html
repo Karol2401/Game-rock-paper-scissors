@@ -10,25 +10,32 @@
 <body>
 
     <div id="start" style="display:block">
-        <h1 id="heading"></h1>
+        <h1 id="heading">Rock, Paper, Scissors</h1>
 
         <div id="result-area">
             <h2>Player: <span id="player-selection"></span></h2>
-            <h2>Computer: <span id="computer-selection"></span></h2>
-            <h2>Result:<span id="result"></span></h2>
             <h2>Player Score: <span id="player-score"></span></h2>
+            <h2>Computer: <span id="computer-selection"></span></h2>
             <h2>Computer Score: <span id="computer-score"></span></h2>
+            <h2>Result: <span id="result"></span></h2>
         </div>
 
         <div id="game-area">
-            <button class="gamebutton" id="rock">rock</button>
-            <button class="gamebutton" id="paper">paper</button>
-            <button class="gamebutton" id="scissors">scissors</button>
+            <button class="gamebutton" id="rock">
+                <p>rock</p>
+            </button>
+            <button class="gamebutton" id="paper">
+                <p>paper</p>
+            </button>
+            <button class="gamebutton" id="scissors">
+                <p>scissors</p>
+            </button>
         </div>
-
-        <h3>Rules</h3>
-        <p>Rock wins against scissors | Scissors win against paper | Paper wins against rock</p>
-        <p>The game ends when you or the computer reaches 5 points.</p>
+        <div id="bottom">
+            <h3>Rules</h3>
+            <p>Rock wins against scissors | Scissors win against paper | Paper wins against rock</p>
+            <p>The game ends when you or the computer reaches 5 points.</p>
+        </div>
     </div>
 
     <div id="game-over" style="display:none"></div>
