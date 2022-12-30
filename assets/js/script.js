@@ -1,4 +1,6 @@
 // Get access to HTML elements
+const startPage = document.getElementById('start')
+const gameOverPage = document.getElementById('game-over')
 const playerSelectionDisplay = document.getElementById('player-selection')
 const computerSelectionDisplay = document.getElementById('computer-selection')
 const resultDisplay = document.getElementById('result')
@@ -21,6 +23,7 @@ possibleSelections.forEach(button => button.addEventListener('click', (event) =>
     playerSelectionDisplay.innerHTML = playerSelection
     generateComputerSelection ()
     getResult()
+    gameOver ()
 }))
 
 //Generate a random number from 0 to 2 and assign it to the elements rock paper scissors
@@ -81,11 +84,14 @@ function getResult () {
 }
 
 function gameOver () {
-    if (playerScore === 5) {
-        
+    if (playerScore == 5) {
+        startPage.style.display = 'none'
+        gameOverPage.style.display = 'block' 
+
     }
-    if (computerScore === 5) {
-        
+    if (computerScore == 5) {
+        startPage.style.display = 'none'
+        gameOverPage.style.display = 'block'
     }
 }
 
