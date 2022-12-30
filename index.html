@@ -8,26 +8,30 @@
     <title>Document</title>
 </head>
 <body>
-    <h1 id="heading"></h1>
 
-    <div id="result-area">
-        <h2>Player: <span id="player-selection"></span></h2>
-        <h2>Computer: <span id="computer-selection"></span></h2>
-        <h2>Result:<span id="result"></span></h2>
-        <h2>Player Score: <span id="player-score"></span></h2>
-        <h2>Computer Score: <span id="computer-score"></span></h2>
+    <div id="start">
+        <h1 id="heading"></h1>
+
+        <div id="result-area">
+            <h2>Player: <span id="player-selection"></span></h2>
+            <h2>Computer: <span id="computer-selection"></span></h2>
+            <h2>Result:<span id="result"></span></h2>
+            <h2>Player Score: <span id="player-score"></span></h2>
+            <h2>Computer Score: <span id="computer-score"></span></h2>
+        </div>
+
+        <div id="game-area">
+            <button id="rock">rock</button>
+            <button id="paper">paper</button>
+            <button id="scissors">scissors</button>
+        </div>
+
+        <h3>Rules</h3>
+        <p>Rock wins against scissors | Scissors win against paper | Paper wins against rock</p>
+        <p>The game ends when you or the computer reaches 5 points.</p>
     </div>
 
-    <div id="game-area">
-        <button id="rock">rock</button>
-        <button id="paper">paper</button>
-        <button id="scissors">scissors</button>
-    </div>
-
-    <h3>Rules</h3>
-    <p>Rock wins against scissors | Scissors win against paper | Paper wins against rock</p>
-    <p>The game ends when you or the computer reaches 5 points.</p>
-
+    <div id="game-over"></div>
 
     <script src="assets/js/script.js"></script>
 </body>

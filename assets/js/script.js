@@ -80,3 +80,12 @@ function getResult () {
     resultDisplay.innerHTML = result
 }
 
+function gameOver () {
+    if (playerScore === 5) {
+        
+    }
+    if (computerScore === 5) {
+        
+    }
+}
+
