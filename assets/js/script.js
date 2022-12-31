@@ -89,12 +89,12 @@ function gameOver () {
     if (playerScore == 5) {
         startPage.style.display = 'none'
         gameOverPage.style.display = 'grid'
-        finalResult = '<a href="https://8000-karol2401-gamerockpaper-rxqnq940vbj.ws-eu80.gitpod.io/">You are win. Try again!</a>'
+        finalResult = '<a href="https://karol2401.github.io/Game-rock-paper-scissors/">You are win. Try again!</a>'
     }
     if (computerScore == 5) {
         startPage.style.display = 'none'
         gameOverPage.style.display = 'grid' 
-        finalResult = '<a href="https://8000-karol2401-gamerockpaper-rxqnq940vbj.ws-eu80.gitpod.io/">You are lose. Try again!</a>'  
+        finalResult = '<a href="https://karol2401.github.io/Game-rock-paper-scissors/">You are lose. Try again!</a>'  
     }
     gameOverPage.innerHTML = finalResult
 }
