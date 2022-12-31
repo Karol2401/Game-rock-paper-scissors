@@ -3,9 +3,9 @@
  Rock Paper Scissors is a simple game that demonstrates how JavaSricpt works. The game uses a random mechanism to generate the computer's choices. As a user, we can compete against the computer and see if we can win.
  ![Game screen on different devices](/assets/images/Screenshot%202022-12-31%20at%2019.45.17.png)
 
- ## Features ##
+## Features ##
 
- ### Existing Features ###
+### Existing Features ###
  
  + Rock Paper Scissors Heading
  
@@ -35,7 +35,7 @@
 
   ![Rules of the game](/assets/images/Screenshot%202022-12-31%20at%2018.03.37.png)
 
-  ## Testing 
+## Testing 
 
   * I tested that this site works in different browsers: Chrome, Safari, Firefox, Opera.
   * I confirmed that this site is responsive, looks good and functions well on all standard screen sizes using the Devtools device toolbar.
@@ -43,7 +43,7 @@
   * I confirm that all buttons are working correctly and the scoreboard is always updating.
   * I confirm the links in the page all works.
 
-  ## Validator Testing
+## Validator Testing
   + HTML
     * No errors were returned when passing through the official W3C validator.
   + CSS
@@ -55,13 +55,13 @@
       * Largest function has 27 statements in it, while the median is 8.
       * The most complex function has a cyclomatic complexity value of 14 while the median is 3.
 
-  ## Unfixed Bugs
-    The Validator identified several errors that I was unable to correct:
-    - 'arrow function syntax (=>)' is only available in ES6 (use 'esversion: 6').
-    - 'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+## Unfixed Bugs
+  The Validator identified several errors that I was unable to correct:
+- 'arrow function syntax (=>)' is only available in ES6 (use 'esversion: 6').
+- 'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
 
-  ## Deployment
-  + The site was deployed to GitHub pages. The steps to deploy are as follows:
+## Deployment
++ The site was deployed to GitHub pages. The steps to deploy are as follows:
     * In the GitHub repository, navigate to the Settings tab
     * From the source section drop-down menu, select the Master Branch
     * Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
