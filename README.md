@@ -1,6 +1,7 @@
 # Rock Paper Scissors #
 
  Rock Paper Scissors is a simple game that demonstrates how JavaSricpt works. The game uses a random mechanism to generate the computer's choices. As a user, we can compete against the computer and see if we can win.
+ ![Game screen on different devices](/assets/images/Screenshot%202022-12-31%20at%2019.45.17.png)
 
  ## Features ##
 
@@ -47,4 +48,31 @@
     * No errors were returned when passing through the official W3C validator.
   + CSS
     *  No errors were found when passing through the official (Jigsaw) validator
-  +
+  + JavaScript
+    * Metrics
+      * There are 5 functions in this file.
+      * Function with the largest signature take 1 arguments, while the median is 0.
+      * Largest function has 27 statements in it, while the median is 8.
+      * The most complex function has a cyclomatic complexity value of 14 while the median is 3.
+
+  ## Unfixed Bugs
+    The Validator identified several errors that I was unable to correct:
+    - 'arrow function syntax (=>)' is only available in ES6 (use 'esversion: 6').
+    - 'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+
+  ## Deployment
+  + The site was deployed to GitHub pages. The steps to deploy are as follows:
+    * In the GitHub repository, navigate to the Settings tab
+    * From the source section drop-down menu, select the Master Branch
+    * Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
+ + The live link can be found here - https://karol2401.github.io/Game-rock-paper-scissors/
+
+ ## Credits
+
+ + Google Fonts was used to choose my fonts, Permanent Marker and Metrophobic.
+ + The icons in the footer and result area were taken from https://emojings.com
+ + The idea for the gameover page was taken from the https://www.youtube.com/watch?v=iMs3ITfHNEY&ab_channel=ByteGrad
+ + The idea of using icons to decorate the buttons https://www.youtube.com/watch?v=1yS-JV4fWqY&ab_channel=WebDevSimplified
+ + The idea how Idea of updating the score https://www.youtube.com/watch?v=tzjF8LkfWfc&ab_channel=CleverProgrammer
+ + The favicon image was downloaded from https://pixabay.com/
+ + The idea for the colour palette was taken from https://mycolor.space/
