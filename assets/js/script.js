@@ -19,8 +19,8 @@ let playerScore = 0
 let computerScore = 0
 
 //Add event when clicking one of the 3 buttons
-possibleSelections.forEach(gamebutton => gamebutton.addEventListener('click', (event) => {
-    playerSelection = event.target.id
+possibleSelections.forEach(button => button.addEventListener('click', (e) => {
+    playerSelection = e.target.id
     playerSelectionDisplay.innerHTML = playerSelection
     generateComputerSelection ()
     getResult()
@@ -88,13 +88,13 @@ function gameOver () {
     if (playerScore == 5) {
         startPage.style.display = 'none'
         gameOverPage.style.display = 'block' 
-        finalResult = 'You are winner! <a href="https://8000-karol2401-gamerockpaper-rxqnq940vbj.ws-eu80.gitpod.io/">Try again</a>'
+        finalResult = '<p>You are winner!</p><p><button>Try again</button></p>'
 
     }
     if (computerScore == 5) {
         startPage.style.display = 'none'
         gameOverPage.style.display = 'block'
-        finalResult = 'You have lost this game! <a href="https://8000-karol2401-gamerockpaper-rxqnq940vbj.ws-eu80.gitpod.io/">Try again</a>'
+        finalResult = '<p>You have lost this game!</p><p><button>Try again</button></p>'
     }
     gameOverPage.innerHTML = finalResult
 }
