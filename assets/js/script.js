@@ -32,15 +32,15 @@ function generateComputerSelection () {
     const randomNumber = Math.floor(Math.random() * 3)
 
     if (randomNumber === 0) {
-        computerSelection = 'scissors'
+        computerSelection = '✂️'
     }
 
     if (randomNumber === 1) {
-        computerSelection = 'paper'
+        computerSelection = '📃'
     }
 
     if (randomNumber === 2) {
-        computerSelection = 'rock'
+        computerSelection = '🗿'
     }
     computerSelectionDisplay.innerHTML = computerSelection
 }
@@ -50,33 +50,33 @@ function getResult () {
     if (computerSelection === playerSelection) {
         result = "Draw"    
     }
-    if (computerSelection === 'rock' && playerSelection === 'scissors') {
+    if (computerSelection === '🗿' && playerSelection === '✂️') {
         result = "You lose"
         computerScore += 1
         computerScoreDisplay.innerText = computerScore
 
     }
-    if (computerSelection === 'scissors' && playerSelection === 'paper') {
+    if (computerSelection === '✂️' && playerSelection === '📃') {
         result = "You lose"
         computerScore += 1
         computerScoreDisplay.innerText = computerScore
     }
-    if (computerSelection === 'paper' && playerSelection === 'rock') {
+    if (computerSelection === '📃' && playerSelection === '🗿') {
         result = "You lose"
         computerScore += 1
         computerScoreDisplay.innerText = computerScore
     }
-    if (computerSelection === 'scissors' && playerSelection === 'rock') {
+    if (computerSelection === '✂️' && playerSelection === '🗿') {
         result = "You win"
         playerScore += 1
         playerScoreDisplay.innerText = playerScore
     }
-    if (computerSelection === 'paper' && playerSelection === 'scissors') {
+    if (computerSelection === '📃' && playerSelection === '✂️') {
         result = "You win"
         playerScore += 1
         playerScoreDisplay.innerText = playerScore
     }
-    if (computerSelection === 'rock' && playerSelection === 'paper') {
+    if (computerSelection === '🗿' && playerSelection === '📃') {
         result = "You win"
         playerScore += 1
         playerScoreDisplay.innerText = playerScore

@@ -13,10 +13,20 @@ body {
 .gamebutton {
     padding-top: 7px;
     padding-bottom: 2px;
-    width: 7rem;
-    height: 7rem;
+    width: 5rem;
+    height: 5rem;
     font-size: 1rem;
     margin-bottom: 0.5rem;
+}
+
+.gamebutton:hover {
+    padding-top: 7px;
+    padding-bottom: 2px;
+    width: 5rem;
+    height: 5rem;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    background-color: #334B49;
 }
 
 #bottom {
@@ -25,9 +35,5 @@ body {
     color: white;
     margin-top: 3px;
     padding: 3px; 
-}
-
-i {
-    font-size: 2rem;
 }
 
