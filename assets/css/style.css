@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Metrophobic&family=Permanent+Marker&display=swap');
+
 body {
     background-color: #7CB6B1;
     color: #334B49;
@@ -8,6 +10,11 @@ body {
     text-align: center;
     font-size: 3rem;
     color: white;
+    font-family: 'Permanent Marker', cursive;
+}
+
+#result-area {
+    font-family: 'Metrophobic', sans-serif;
 }
 
 .gamebutton {
@@ -37,5 +44,5 @@ body {
     color: white;
     margin-top: 3px;
     padding: 3px; 
+    font-family: 'Metrophobic', sans-serif;
 }
-

@@ -84,17 +84,17 @@ function getResult () {
     resultDisplay.innerHTML = result
 }
 
+//Window with end-of-game information and button to restart the game
 function gameOver () {
     if (playerScore == 5) {
         startPage.style.display = 'none'
-        gameOverPage.style.display = 'block' 
-        finalResult = '<p>You are winner!</p><p><button>Try again</button></p>'
-
+        gameOverPage.style.display = 'grid'
+        finalResult = '<a href="https://8000-karol2401-gamerockpaper-rxqnq940vbj.ws-eu80.gitpod.io/">You are win. Try again!</a>'
     }
     if (computerScore == 5) {
         startPage.style.display = 'none'
-        gameOverPage.style.display = 'block'
-        finalResult = '<p>You have lost this game!</p><p><button>Try again</button></p>'
+        gameOverPage.style.display = 'grid' 
+        finalResult = '<a href="https://8000-karol2401-gamerockpaper-rxqnq940vbj.ws-eu80.gitpod.io/">You are lose. Try again!</a>'  
     }
     gameOverPage.innerHTML = finalResult
 }
